@@ -1,0 +1,11 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@shadowsocksr[-1]
+	add ucitrack shadowsocksr
+	set ucitrack.@shadowsocksr[-1].init=shadowsocksr
+	commit ucitrack
+EOF
+
+rm -f /tmp/luci-indexcache
+exit 0
