@@ -5,14 +5,14 @@ ShadowsocksR-libev for OpenWrt
 简介
 ---
 
- 本项目是 [shadowsocksr-libev][1] 在 OpenWrt 上的移植  
+ 本项目在 [ywb94/openwrt-ssr][a] 的基础上修改
  
  各平台预编译IPK请在本项目releases页面下载
 
 特性
 ---
 
-软件包包含 [shadowsocksr-libev][1] 的可执行文件,以及luci控制界面  
+软件包包含 [shadowsocksr-libev][1] 的可执行文件,以及luci控制界面
 
 支持SSR客户端、服务端模式（服务端支持部分混淆模式、支持多端口）
 
@@ -67,7 +67,7 @@ ShadowsocksR-libev for OpenWrt
    ./scripts/feeds update packages
    ./scripts/feeds install libpcre
    # 获取 Makefile
-   git clone https://github.com/ywb94/openwrt-ssr.git package/openwrt-ssr
+   git clone https://github.com/compasss/openwrt-ssr.git package/openwrt-ssr
    # 选择要编译的包 
    #luci ->3. Applications-> luci-app-shadowsocksR         原始版本
    #luci ->3. Applications-> luci-app-shadowsocksR-GFW     GFWList版本
@@ -252,3 +252,4 @@ GFW版本支持IP路由模式和GFW列表模式，需卸载原有的dnsmasq，�
   [7]: https://github.com/bettermanbao/openwrt-kcptun/releases 
   [8]: http://iytc.net/tools/pand.rar 
   [S]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
+  [a]: https://github.com/ywb94/openwrt-ssr.git
